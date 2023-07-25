@@ -1,0 +1,54 @@
+<div class="contenedor-principal">
+    <div class="contenedor-naturales">
+                {% set clean_key = key | clean_key(CLAVE) %}
+                {% set url_parts = is_url(clean_key) %}
+                {% if url_parts[1] %}
+                    <p><b>{{ url_parts[0] }}<a class="llink" href="{{ url_parts[1] }}" target="_blank">{{ url_parts[1] }}</a>{{ url_parts[2] }}</b></p>
+                {% else %}
+                    <p><b>{{ url_parts[0] }}</b></p>
+                {% endif %}
+    </div>
+    <div class="contenedor-derecho">
+         <div class="contenedor-calificacion" data-calificacion-usuario="{{ calificacion_usuario }}">
+            <div class="barra-estrellas">
+
+                {% set cal,promedio, user = process_calificacion(calificacion_usuario) %}
+                        {%if user %}
+                            <p>By::{{ user }}</p>
+                        {% endif %}
+                        {% for i in range(5)|reverse %}
+                            {% if i < cal %}
+                                <span class="estrella rojo" data-rating="{{ i+1 }}" data-tema="{{ key }}" data-padre="{{ PADRE }}" data-clave="{{ CLAVE }}">&#9733;</span>
+                            {% else %}
+                                <span class="estrella" data-rating="{{ i+1 }}" data-tema="{{ key }}" data-padre="{{ PADRE }}" data-clave="{{ CLAVE }}">&#9733;</span>
+                            {% endif %}
+                        {% endfor %}
+
+            </div>   
+
+        </div>
+        <div class="contenedor-metricas">
+            <div class="metricas-contenedor">
+                &Epsilon; &Sigma; &Phi; &Mu;<br>
+                {{ epsilon }} {{ sigma }} {{ phi }} {{ mu }} 
+                {{ promedio }}
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<div class="t">
+    <form  action="{{ url_for('add_temario', clave=CLAVE) }}" method="post">
+        {{ form.subtema( id="user-text", class="texto") }}
+        {{ form.tema( value=key, type="hidden") }}
+        {{ form.submit(class="btn0 btn-subtema") }}
+        {{ form.hidden_tag() }}
+    </form>
+
+    <form action="{{ url_for('delete_temario', clave=CLAVE) }}" method="post">
+        {{ form.padre(value=PADRE, type="hidden") }}
+        {{ form.tema( value=key, type="hidden") }}
+        {{ form.eliminar(class="btn0 btn-eliminar") }}
+        {{ form.hidden_tag() }}
+    </form>
+</div>

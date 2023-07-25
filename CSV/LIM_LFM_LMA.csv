@@ -1,0 +1,234 @@
+Semestre,Clave,Asignatura
+1,AL101,introduccion al calculo
+1,AL102,algebra superior
+1,AL103,fundamentos de programacion
+1,AL104,pensamiento matematico
+1,AL105,geometria
+1,AL106,comunicacion asertiva
+2,AL201,calculo
+2,AL202,algebra lineal
+2,AL203,paradigmas de programacion
+2,AL204,construccion matematica
+2,AL205,probabilidad
+2,AL206,resolucion de problemas complejos
+3,AL301,calculo multivariable
+3,AL302,algebra lineal avanzada
+3,AL303,analisis de algoritmos
+3,AL304,teoria de graficas
+3,AL305,estadistica
+3,AL306,toma de decisiones basadas en datos
+4,AL401,analisis matematico
+4,AL402,teoria de conjuntos
+4,AL403,metodos numericos
+4,AL404,ecuaciones dinamicas
+4,AL405,modelos estocasticos
+4,AL406,etica y responsabilidad social
+5,AL501,teoria de la medida en finanzas
+5,AL502,algebra abstracta
+5,AL503,optimizacion
+5,AL504,fundamentos de inteligencia artificial
+5,AL505,modelos estadisticos
+6,AL601,negociacion de activos financieros
+6,AL602,teoria de control discreto
+6,AL603,teoria computacional
+7,AL701,modelado de precios en tiempo discreto
+7,AL702,trabajo terminal i
+8,AL801,modelado de precios en tiempo continuo
+8,AL802,trabajo terminal ii
+8,AL803,practica profesional
+8,AL804,emprendimiento
+9,AL901,topologia algoritmica
+9,AL902,criptologia
+9,AL903,aprendizaje de maquina estadistico
+9,AL904,teoria del riesgo
+9,AL905,teoria de la informacion
+9,AL906,analisis complejo
+10,AL1001,computo de alto desempeno
+10,AL1002,geometria algoritmica
+10,AL1003,aprendizaje profundo
+10,AL1004,computo en la nube
+10,AL1005,fisica computacional
+10,AL1006,biologia computacional
+10,AL1007,matrices aleatorias 
+10,AL1008,administracion de riesgos financieros
+10,AL1009,teoria de juegos
+10,AL1010,seguridad digital
+10,AL1011,desarrollo aplicaciones moviles web
+1,M101,sociedad y conocimiento
+1,M102,calculo i
+1,M103,algebra i
+1,M104,geometria analitica
+1,M105,informatica basica
+2,M206,introduccion a la ingenieria
+2,M207,calculo ii
+2,M208,algebra ii
+2,M209,matematicas discretas
+2,M210,programacion
+3,M311,economia
+3,M312,calculo iii
+3,M313,algebra iii
+3,M314,ecuaciones diferenciales ordinarias i
+3,M315,metodos numericos i
+4,M416,ingenieria economica
+4,M417,fisica i
+4,M418,optimizacion lineal
+4,M419,ecuaciones diferenciales ordinarias ii: teoria y metodos numericos
+4,M420,metodos numericos ii
+5,M521,formulacion y evaluacion de proyectos
+5,M522,fisica ii
+5,M523,analisis matematico
+5,M524,ecuaciones diferenciales parciales i: teoria y metodos numericos
+5,M525,probabilidad
+6,M626,ingenieria industrial
+6,M627,finanzas
+6,M628,analisis de decisiones
+6,M629,optimizacion no lineal
+6,M630,ecuaciones diferenciales parciales ii
+6,M631,fisica iii
+6,M632,estadistica
+7,M733,administracion de la produccion
+7,M734,sistemas financieros y comerciales
+7,M735,econometria
+7,M736,investigacion de operaciones
+7,M737,simulacion i
+7,M738,estadistica avanzada
+7,M739,procesos estocasticos
+8,M840,ingenieria de calidad y reingenieria
+8,M841,ingenieria financiera
+8,M842,seminario de titulacion
+8,M843,seminario de modelacion industrial
+8,M844,seminario de modelacion financiera
+8,M845,simulacion ii
+8,M846,sistema de calidad
+1,LFM101,calculo i
+1,LFM102,algebra i
+1,LFM103,geometria analitica
+1,LFM104,fisica i
+1,LFM994,laboratorio fisica i
+2,LFM205,calculo ii
+2,LFM206,ecuaciones diferenciales
+2,LFM207,algebra ii
+2,LFM208,fisica ii
+2,LFM209,analisis vectorial
+2,LFM995,laboratorio fisica ii
+3,LFM310,calculo iii
+3,LFM311,algebra iii
+3,LFM312,op geometria proyectiva
+3,LFM313,op programacion i
+3,LFM314,fisica iii
+3,LFM996,laboratorio fisica iii
+4,LFM415,calculo iv
+4,LFM416,algebra iv
+4,LFM417,programacion ii
+4,LFM418,fisica iv
+4,LFM419,introduccion a metodos matematicos
+4,LFM420,circuitos electricos
+4,LFM991,laboratorio fisica iv
+5,LFM501,analisis matematico i
+5,LFM502,algebra moderna i
+5,LFM503,op geometria diferencial i
+5,LFM504,op lenguaje ensamblador
+5,LFM505,op probabilidad i
+5,LFM506,op metodos numericos
+5,LFM507,op curso especial
+5,LFM508,op curso especial
+5,LFM542,fisica teorica i
+5,LFM543,introduccion a fisica moderna
+5,LFM544,metodos matematicos i
+5,LFM545,laboratorio i
+5,LFM546,op curso especial
+5,LFM547,op curso especial
+5,LFM572,analisis
+5,LFM573,op algebra y geometria
+5,LFM574,didactica general
+5,LFM575,historia de las matematicas
+5,LFM590,introduccion a la ingenieria nuclear
+6,LFM601,analisis matematico ii
+6,LFM602,op introduccion a funciones de variable compleja
+6,LFM603,op algebra moderna ii
+6,LFM604,op geometria diferencial ii
+6,LFM605,op introduccion a sistemas
+6,LFM606,op programacion lineal
+6,LFM607,op probabilidad ii
+6,LFM608,op analisis numerico i
+6,LFM617,op curso especial
+6,LFM618,op curso especial
+6,LFM644,op metodos matematicos i
+6,LFM645,op laboratorio i
+6,LFM648,fisica teorica ii
+6,LFM649,mecanica cuantica i
+6,LFM650,op metodos matematicos ii
+6,LFM651,op electronica funcional i
+6,LFM652,op laboratorio ii
+6,LFM653,op curso especial
+6,LFM654,op curso especial
+6,LFM659,op laboratorio iii
+6,LFM668,op laboratorio iv
+6,LFM676,op topicos en ecuaciones diferenciales i
+6,LFM677,op geometria i
+6,LFM678,probabilidad y estadistica i
+6,LFM679,taller pedagogico i
+6,LFM691,termodinamica de ciclos de potencia
+6,LFM692,transferencia de calor
+7,LFM719,op analisis matematico iii
+7,LFM720,op funciones de variable compleja i
+7,LFM721,op teoria de ecuaciones diferenciales i
+7,LFM722,op algebra moderna iii
+7,LFM723,op geometria diferencial iii
+7,LFM724,op topologia i
+7,LFM725,op fundamentos de computacion
+7,LFM726,op investigacion de operaciones i
+7,LFM727,op estadistica i
+7,LFM728,op analisis numerico ii
+7,LFM729,op curso especial
+7,LFM730,op curso especial
+7,LFM745,op laboratorio i
+7,LFM750,op metodos matematicos ii
+7,LFM752,op laboratorio ii
+7,LFM755,fisica teorica iii
+7,LFM756,mecanica cuantica ii
+7,LFM757,op introduccion a fisica del estado solido
+7,LFM758,op electronica funcional ii
+7,LFM759,op laboratorio iii
+7,LFM760,op teoria del control i
+7,LFM761,op curso especial
+7,LFM762,op curso especial
+7,LFM768,op laboratorio iv
+7,LFM780,op topicos en ecuaciones diferenciales ii
+7,LFM781,op geometria ii
+7,LFM782,op probabilidad y estadistica ii
+7,LFM783,taller pedagogico ii
+7,LFM784,op seminario de la problematica educativa nacional
+7,LFM785,filosofia de la ciencia i
+7,LFM793,ingenieria nuclear i
+7,LFM794,teoria de reactores nucleares i
+8,LFM831,op analisis matematico iv
+8,LFM832,op funciones de variable compleja ii
+8,LFM833,op teoria de ecuaciones diferenciales ii
+8,LFM834,op algebra moderna iv
+8,LFM835,op topologia ii
+8,LFM836,op arquitectura de una computadora
+8,LFM837,op investigacion de operaciones ii
+8,LFM838,op estadistica ii
+8,LFM839,op analisis numerico iii
+8,LFM840,op curso especial
+8,LFM841,op curso especial
+8,LFM852,op laboratorio ii
+8,LFM859,op laboratorio iii
+8,LFM863,op fisica teorica iv
+8,LFM864,fisica estadistica
+8,LFM865,op radiacion y propagacion
+8,LFM866,op introduccion a la fisica atomica y molecular
+8,LFM867,op introduccion a la fisica nuclear y particulas elementales
+8,LFM868,op laboratorio iv
+8,LFM869,op teoria del control ii
+8,LFM870,op curso especial
+8,LFM871,op curso especial
+8,LFM886,op variable compleja
+8,LFM887,op filosofia de la ciencia ii
+8,LFM888,op temas aplicativos de la matematica
+8,LFM895,ingenieria nuclear ii
+8,LFM896,teoria de reactores nucleares ii
+8,LFM897,proteccion radiologica
+8,LFM992,edp
+8,LFM993,mat financieras

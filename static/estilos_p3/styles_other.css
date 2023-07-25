@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Frijole');
+.section-content1 {
+    font-family: 'Frijole', fallback, sans-serif;
+    color: #999999;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+}
+#section1 {
+    background-image: url('im/0.jpg');
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+.section {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease-in-out;
+}
+.section-content1 {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* Cambia esto */
+    justify-content: left;
+    align-items: left;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 2em;
+    text-align: left;
+}
+.sem {
+    /* Estilos existentes para .sem */
+    padding-bottom: 50px; /* Ajusta este valor según tus necesidades */
+    font-size: 65px;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    padding: 20px;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+.cell:hover {
+    transform: scale(1.1);
+}
+.cell-content{
+	color: #DAD2B0 ;
+    font-size: 26px;
+}
+.cell-content:hover{
+	color: #DAD2B0 ;
+    font-size: 28px;
+}
+
+
+.path {
+    position: absolute;
+    top: 0;
+    left: central;
+    font-size: 15px; /* Elige el tamaño que prefieras */
+    font-style: italic;
+    /* Resto de estilos... */
+}
+.a {
+    text-decoration: none;
+}

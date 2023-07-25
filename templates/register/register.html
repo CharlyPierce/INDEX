@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registro</title>
+    </head>
+    <body>
+
+        <div class="button-container">
+            <a href="/login" class="submit-button">Iniciar Session</a>
+        </div>
+
+        <div class="button-container">
+            <h1>Registro</h1>
+        
+            <form method="POST">
+                {{ form.hidden_tag() }}
+
+                <p>
+                    {{ form.nickname.label }}<br>
+                    {{ form.nickname(size=30) }}
+                    {% for error in form.nickname.errors %}
+                        <span style="color: red;">{{ error }}</span>
+                    {% endfor %}
+                    {% if nickname_exists %}
+                        <span style="color: red;">Este nickname ya está registrado.</span>
+                    {% endif %}
+                </p>
+                <p>
+                    {{ form.correo.label }}<br>
+                    {{ form.correo(size=30) }}
+                    {% for error in form.correo.errors %}
+                        <span style="color: red;">{{ error }}</span>
+                    {% endfor %}
+                    {% if user_exists %}
+                        <span style="color: red;">Este correo ya está registrado.</span>
+                    {% endif %}
+                </p>
+                <p>
+                    {{ form.passwd.label }}<br>
+                    {{ form.passwd(size=30) }}
+                    {% for error in form.passwd.errors %}
+                        <span style="color: red;">{{ error }}</span>
+                    {% endfor %}
+                </p>
+                <p>                    
+                    {{ form.passwd2.label }}<br>
+                    {{ form.passwd2(size=30) }}
+                    {% for error in form.passwd2.errors %}
+                        <span style="color: red;">{{ error }}</span>
+                    {% endfor %}
+                </p>
+                <p>{{ form.submit() }}</p>
+            </form>
+        </div>
+        
+    </body>
+</html>
+
+

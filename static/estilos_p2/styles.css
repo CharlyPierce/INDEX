@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Annie Use Your Telescope');
+@import url('https://fonts.googleapis.com/css?family=Akronim');
+@import url('https://fonts.googleapis.com/css?family=Arbutus');
+
+
+.section-content {
+  font-family: 'Annie Use Your Telescope', fallback, sans-serif;
+  color: blue;
+}
+.section-content1 {
+    font-family: 'Akronim', fallback, sans-serif;
+    color: #999999;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.section-content {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
+
+#section1 {
+    background-image: url('imagen/reeea3.jpg');
+}
+
+#section2 {
+    background-image: url('imagen/rea2.jpg');
+}
+
+
+.extra {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    color: black;
+    font-size: 1.5em;
+    text-align: center;
+    font-family: 'Arbutus', fallback, sans-serif;
+    color: #999999;
+    background-image: url('im/foot.jpg');
+}
+
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.section {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.section-content1 {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* Cambia esto */
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
+.sem {
+    /* Estilos existentes para .sem */
+    padding-bottom: 20px; /* Ajusta este valor según tus necesidades */
+    font-size: 45px;
+}
+
+.grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 70%;
+    padding: 1px;
+    flex-wrap: wrap;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 8px 4px 1px 1px rgba(0.10,0.20,0.30,0.30);
+    border: 1px solid rgba(255, 255, 255, 0.1); 
+    width: 180px;
+    height: 50px; /* Hace los bloques más altos */
+    margin: 2.5%;
+    border-radius: 10px; /* Hace las esquinas redondeadas */
+}
+
+.cell:hover {
+    transform: scale(1.1);
+}
+
+.cell2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra en todos los lados */
+    border: 2px solid rgba(255, 255, 255, 0.5); /* Borde con opacidad */
+    width: 180px;
+    height: 50px;
+    margin: 2.5%;
+    border-radius: 10px;
+}
+.cell2:hover {
+    transform: scale(1.1);
+}
+.cell-content2{
+	color: #8F7E33;
+}
+.cell-content{
+	color: #DAD2B0 ;
+}
+.esp {
+    color: rgba(218, 210, 176 , 0.6); /* Negro con 50% de transparencia */
+    font-size: 40px;
+ }
+
+
+.grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 70%;
+    padding: 1px;
+    flex-wrap: wrap;
+}
+.cell2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra en todos los lados */
+    border: 2px solid rgba(255, 255, 255, 0.5); /* Borde con opacidad */
+    width: 180px;
+    height: 50px;
+    margin: 2.5%;
+    border-radius: 10px;
+}
+.cell2:hover {
+    transform: scale(1.1);
+}
+.cell-content2{
+	color: #8F7E33;
+}
+.cell-content{
+	color: #DAD2B0 ;
+}
+.esp {
+    color: rgba(218, 210, 176 , 0.6); /* Negro con 50% de transparencia */
+    font-size: 40px;
+ }
+ .a{
+    text-decoration: none;
+}

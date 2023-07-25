@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head> 									<!--#Aqui estas dentro de "STATIC" como raiz  MAYUSCULAS CSS-->
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='estilos_p3/styles_other.css') }}">
+		<link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
+		
+	</head>
+	<body>
+
+		<div class="row">
+			<div class="section" id="section1" >
+				<div class="section-content1">
+					<div class="sem">
+							{{ carrera }} - {{ semestre }}
+					</div>
+
+						<div class="extra" >
+							<div class="grid">
+								{% for item in materia %}
+								<a class="a" href="{{ url_for('temario', clave=item[1] ) }}" >
+										<div class="cell2" id="cell1">
+										<div class="cell-content">* {{ item[0] }}</div>
+										</div>
+								</a>
+								{% endfor %}
+							</div>
+						</div>		
+
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+

@@ -1,0 +1,31 @@
+{% from "html_p4/display_tree.html" import display_tree %}
+<!DOCTYPE html>
+<html>
+	<head> 												<!--#Aqui estas dentro de STATIC" como raiz  MAYUSCULAS CSS-->  
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='estilos_p4/styles.css') }}">
+	</head>
+	<body class="desplazamientos">
+		<div class="desplazamiento">
+				<div class="user">
+					<p id="userId" data-user-id="{{ current_user.get_id() }}">{{ current_user.get_id() }}</p>
+					<a class="sesion" href="{{ url_for('logout') }}">Cerrar sesión</a>
+				</div>
+				{% if url %}
+					<p ><a class="link_link" href="{{ url }}" target="_blank">{{ url }}</a></p>
+				{% endif %}
+
+				{% set usuario = current_user.get_id() %}
+				<div>{{ display_tree(tree, PADRE, CLAVE, form ) }} </div>
+		</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script src="{{ url_for('static', filename='js/js_p4/rating.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/js_p4/scroll.js') }}"></script>
+
+	
+	
+
+
+	</body>
+</html>

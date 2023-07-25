@@ -1,0 +1,39 @@
+Semestre,Clave,Asignatura,Link
+1,AL101,introduccion calculo,https://www.esfm.ipn.mx/assets/files/esfm/docs/planes/LMA/tronco-comun/1/Introduccion-Calculo.pdf
+1,AL102,algebra superior,https://www.esfm.ipn.mx/assets/files/esfm/docs/planes/LMA/tronco-comun/1/Algebra-Superior.pdf
+1,AL103,fundamentos programacion,https://www.esfm.ipn.mx/assets/files/esfm/docs/planes/LMA/tronco-comun/1/Fundamentos-Programacion.pdf
+1,AL104,pensamiento matematico,https://www.esfm.ipn.mx/assets/files/esfm/docs/planes/LMA/tronco-comun/1/Pensamiento-Matematico.pdf
+1,AL105,geometria,https://www.esfm.ipn.mx/assets/files/esfm/docs/planes/LMA/tronco-comun/1/Geometria.pdf
+1,AL106,comunicacion asertiva,https://www.esfm.ipn.mx/assets/files/esfm/docs/planes/LMA/tronco-comun/1/Comunicacion-Asertiva.pdf
+2,AL201,calculo,https://www.esfm.ipn.mx/assets/files/esfm/docs/planes/LMA/tronco-comun/2/Calculo.pdf
+2,AL202,algebra lineal,https://www.esfm.ipn.mx/assets/files/esfm/docs/planes/LMA/tronco-comun/2/Algebra-Lineal.pdf
+2,AL203,paradigmas programacion,https://www.esfm.ipn.mx/assets/files/esfm/docs/planes/LMA/tronco-comun/2/Paradigmas-Programacion.pdf
+2,AL204,construcion matematica,https://www.esfm.ipn.mx/assets/files/esfm/docs/planes/LMA/tronco-comun/2/Construcion-Matematica.pdf
+2,AL205,probabilidad matematica,https://www.esfm.ipn.mx/assets/files/esfm/docs/planes/LMA/tronco-comun/2/Probabilidad-Matematica.pdf
+2,AL206,resolucion problemas complejos,https://www.esfm.ipn.mx/assets/files/esfm/docs/planes/LMA/tronco-comun/2/Resolucion-problemas-complejos.pdf
+3,AL301,calculo multivariado,https://www.esfm.ipn.mx/assets/files/esfm/docs/planes/LMA/tronco-comun/3/Calculo-Multivariado.pdf
+3,AL302,algebra lineal avanzada,https://www.esfm.ipn.mx/assets/files/esfm/docs/planes/LMA/tronco-comun/3/Algebra-Lineal-Avanzada.pdf
+3,AL303,analisis algoritmos,https://www.esfm.ipn.mx/assets/files/esfm/docs/planes/LMA/tronco-comun/3/Analisis-algoritmos.pdf
+3,AL304,teoria graficas,https://www.esfm.ipn.mx/assets/files/esfm/docs/planes/LMA/tronco-comun/3/Teoria-Graficas.pdf
+3,AL305,estadistica,https://www.esfm.ipn.mx/assets/files/esfm/docs/planes/LMA/tronco-comun/3/Estadistica.pdf
+3,AL306,toma basadas datos,https://www.esfm.ipn.mx/assets/files/esfm/docs/planes/LMA/tronco-comun/3/Toma-basadas-datos.pdf
+4,AL401,analisis matematico,https://www.esfm.ipn.mx/assets/files/esfm/docs/planes/LMA/tronco-comun/4/Analisis-Matematico.pdf
+4,AL402,teoria conjuntos,https://www.esfm.ipn.mx/assets/files/esfm/docs/planes/LMA/tronco-comun/4/Teoria-Conjuntos.pdf
+4,AL403,metodos numericos,https://www.esfm.ipn.mx/assets/files/esfm/docs/planes/LMA/tronco-comun/4/Metodos-Numericos.pdf
+4,AL404,ecuaciones dinamicas,https://www.esfm.ipn.mx/assets/files/esfm/docs/planes/LMA/tronco-comun/4/Ecuaciones-dinamicas.pdf
+4,AL405,modelos estocasticos,https://www.esfm.ipn.mx/assets/files/esfm/docs/planes/LMA/tronco-comun/4/Modelos-Estocasticos.pdf
+4,AL406,etica resp soc,https://www.esfm.ipn.mx/assets/files/esfm/docs/planes/LMA/tronco-comun/4/Etica-resp-soc.pdf
+5,AL501,teoria medida finanzas,https://www.esfm.ipn.mx/assets/files/esfm/docs/planes/LMA/tronco-comun/5/Teoria-Medida-Finanzas.pdf
+5,AL502,algebra abstracta,https://www.esfm.ipn.mx/assets/files/esfm/docs/planes/LMA/tronco-comun/5/Algebra-Abstracta.pdf
+5,AL503,optimizacion,https://www.esfm.ipn.mx/assets/files/esfm/docs/planes/LMA/tronco-comun/5/Optimizacion.pdf
+5,AL504,fundamentos inteligencia artificial,https://www.esfm.ipn.mx/assets/files/esfm/docs/planes/LMA/tronco-comun/5/Fundamentos-Inteligencia-Artificial.pdf
+5,AL505,modelos estadisticos,https://www.esfm.ipn.mx/assets/files/esfm/docs/planes/LMA/tronco-comun/5/Modelos-Estadisticos.pdf
+6,AL601,negociacion activos financieros,https://www.esfm.ipn.mx/assets/files/esfm/docs/planes/LMA/tronco-comun/6/Negociacion-Activos-Financieros.pdf
+6,AL602,teoria control discreto,https://www.esfm.ipn.mx/assets/files/esfm/docs/planes/LMA/tronco-comun/6/Teoria-Control-Discreto.pdf
+6,AL603,teoria computacional,https://www.esfm.ipn.mx/assets/files/esfm/docs/planes/LMA/tronco-comun/6/Teoria-Computacional.pdf
+7,AL701,modelado precios tiempo discreto,https://www.esfm.ipn.mx/assets/files/esfm/docs/planes/LMA/tronco-comun/7/Modelado-precios-tiempo-discreto.pdf
+7,AL702,trabajo terminal i,https://www.esfm.ipn.mx/assets/files/esfm/docs/planes/LMA/tronco-comun/7/Trabajo-Terminal-I.pdf
+8,AL801,modelado tiempo continuo,https://www.esfm.ipn.mx/assets/files/esfm/docs/planes/LMA/tronco-comun/8/Modelado-tiempo-continuo.pdf
+8,AL802,trabajo terminal ii,https://www.esfm.ipn.mx/assets/files/esfm/docs/planes/LMA/tronco-comun/8/Trabajo-Terminal-II.pdf
+8,AL803,practica profesional,https://www.esfm.ipn.mx/assets/files/esfm/docs/planes/LMA/tronco-comun/8/Practica-Profesional.pdf
+8,AL804,emprendimiento,https://www.esfm.ipn.mx/assets/files/esfm/docs/planes/LMA/tronco-comun/8/Emprendimiento.pdf

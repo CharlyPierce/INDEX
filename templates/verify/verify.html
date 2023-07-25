@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Verificación de correo</title>
+</head>
+<body>
+  <h1>Verificación de correo</h1>
+
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}
+      <ul class=flashes>
+      {% for message in messages %}
+        <li>{{ message }}</li>
+      {% endfor %}
+      </ul>
+    {% endif %}
+  {% endwith %}
+  
+  <div id="clockdiv"></div>
+  <p id="resend_link" style="display: none;">El código de verificación ha expirado. <a href="{{ url_for('resend_code') }}">Haz clic aquí para reenviar el código.</a></p>
+  
+  <form method="POST">
+    {{ form.hidden_tag() }}
+    <div>
+      {{ form.code.label }}<br>
+      {{ form.code(size=32) }}
+    </div>
+    <div>
+      {{ form.submit() }}
+    </div>
+  </form>
+
+
+  <script>
+    // Tiempo en segundos
+// Tiempo en segundos
+var time_in_seconds = 120;
+// Hora en que se generó el código de verificación
+var generation_time = new Date('{{ session["code_generation_time"] }}').getTime();
+var deadline = new Date(generation_time + time_in_seconds*1000);
+
+function time_remaining(endtime){
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  t = Math.max(0, t);
+  var seconds = Math.floor( (t/1000) % 60 );
+  var minutes = Math.floor( (t/1000/60) % 60 );
+  return {'total':t, 'minutes':minutes, 'seconds':seconds};
+}
+
+function run_clock(id,endtime){
+  var clock = document.getElementById(id);
+  function update_clock(){
+    var t = time_remaining(endtime);
+
+    clock.innerHTML = 'Tiempo restante: '+t.minutes+' minutos y '+t.seconds+' segundos.';
+    if(t.total<=0){ 
+      clearInterval(timeinterval);
+      document.getElementById("resend_link").style.display = 'block'; 
+    }
+  }
+  update_clock(); 
+  var timeinterval = setInterval(update_clock,1000);
+}
+run_clock('clockdiv',deadline);
+
+
+  </script>
+<!-- <script>
+var time_in_minutes = 0.1;
+var generation_time = new Date('{{ session["code_generation_time"] }}');
+var current_time = Date.parse(new Date());
+var time_passed = Math.floor((current_time - generation_time) / 1000 / 60); // tiempo transcurrido en minutos
+var deadline = new Date(generation_time.getTime() + time_in_minutes*60*1000);
+
+function time_remaining(endtime){
+var t = Date.parse(endtime) - Date.parse(new Date());
+t = Math.max(0, t);  // Esto asegura que 't' no sea negativo -->
+
+
+
+
+
+
+  
+</body>
+</html>

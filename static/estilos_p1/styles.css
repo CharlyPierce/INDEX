@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Annie Use Your Telescope');
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.section {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.section:hover {
+    transform: scale(1.03);
+}
+
+.section-content {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    font-size: 1em;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Annie Use Your Telescope', fallback, sans-serif;
+    text-decoration: none;
+}
+.section-content .sec{
+	font-family: 'Annie Use Your Telescope', fallback, sans-serif;
+    color: white;
+}
+.section-content2{
+	font-family: 'Annie Use Your Telescope', fallback, sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+#section1 {
+    background-image: url('page1/If.jpeg');
+}
+
+#section2 {
+    background-image: url('page1/Pf.jpg');
+}
+
+#section3 {
+    background-image: url('page1/Nf.jpg');
+}
+
+.extra {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    text-align: center;
+}
+.extra:hover {
+    transform: scale(1.1);
+}
+.extra {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('I.jpeg');
+    background-color: rgba(255, 255, 255, 1);
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    text-align: center;
+}
+.a{
+    text-decoration: none;
+}

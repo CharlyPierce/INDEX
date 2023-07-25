@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head> 												<!--#Aqui estas dentro de "STATIC" como raiz  MAYUSCULAS CSS-->  
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='estilos_p2/styles.css') }}">
+		<link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
+	</head>
+	<body>
+
+		<div class="row">
+			<div class="section" id="section1" >
+			  <div class="section-content1">
+				  <div class="sem">SEMESTRE</div>
+				<div class="grid">
+				{% if carrera == 'LIM' or carrera == 'LFM' %}
+					{% for j in range(1, 9) %}
+					<a class="a" href="{{ url_for('pagina', carrera=carrera, semestre=j ) }}">
+						<div class="cell" id="cell{{ j }}">
+							<div class="cell-content">{{ j }}</div>
+						</div>
+					</a>
+					{% endfor %}
+				{% else %}
+					{% for i in range(1, 11) %}
+						{% if i >= 9 %}
+						<a class="a" href="{{ url_for('pagina', carrera=carrera, semestre=i ) }}">
+							<div class="cell" id="cell{{ i }}">
+								<div class="cell-content">Optativas {{ i - 8 }}</div>
+							</div>
+						</a>
+						{% else %}
+						<a class="a" href="{{ url_for('pagina', carrera=carrera, semestre=i ) }}">
+							<div class="cell" id="cell{{ i }}">
+								<div class="cell-content">{{ i }}</div>
+							</div>
+						</a>
+						{% endif %}
+					{% endfor %}
+				{% endif %}	
+				</div>      
+			  </div>
+			</div>
+			<div class="section" id="section2" >
+				<div class="section-content">{{ carrera }}</div>
+			</div>
+		</div>
+
+	</body>
+</html>

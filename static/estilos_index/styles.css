@@ -1,0 +1,149 @@
+body {
+    background: url('https://wallpapers.com/images/hd/paint-art-2000-x-1000-background-syefpowxr2j41qyy.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+a.submit-button {
+    display: inline-block;
+    background-color: #4CAF50; /* Verde */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    padding: 10px 24px;
+}
+.button-container .submit-button {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.welcome-title {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    font-family: 'Arial', sans-serif;
+    animation: glow 2s ease-in-out infinite alternate;
+    margin-bottom: 20px;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff, 0 0 40px #00ffff;
+    }
+    to {
+        text-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff, 0 0 40px #00ffff, 0 0 50px #00ffff, 0 0 60px #00ffff;
+    }
+}
+
+.login-info {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    font-family: 'Arial', sans-serif;
+}
+
+.logout-link, .gotostart {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    transition: background-color 0.3s ease;
+}
+
+.logout-link {
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+}
+
+.logout-link:hover {
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+}
+
+.gotostart {
+    background: linear-gradient(to right, #11998e, #38ef7d);
+}
+
+.gotostart:hover {
+    background: linear-gradient(to right, #38ef7d, #11998e);
+}
+
+.login-title {
+    text-align: center;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,0.01);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.username-label, .password-label {
+    margin-bottom: 5px;
+}
+
+.username-input, .password-input {
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 2px solid #333;
+    padding: 5px;
+    outline: none;
+}
+
+.submit-button {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.submit-button:hover {
+    transform: scale(1.05);
+}
+
+
+
+.login-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;  /* Espacio entre los elementos */
+    margin-top: 20px;
+}
+
+.logout-link, .gotostart {
+    background: linear-gradient(90deg, rgba(255,88,88,0.6) 0%, rgba(255,153,51,0.4) 50%, rgba(0,212,255,0.2) 100%);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.logout-link:hover, .gotostart:hover {
+    transform: scale(1.05);
+}
+
+

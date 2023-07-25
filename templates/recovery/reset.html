@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restablecer Contraseña</title>
+</head>
+<body>
+    <h1>Restablecer Contraseña</h1>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.passwd.label }}<br>
+            {{ form.passwd(size=20) }}<br>
+            {% for error in form.passwd.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.passwd2.label }}<br>
+            {{ form.passwd2(size=20) }}<br>
+            {% for error in form.passwd2.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>{{ form.submit() }}</p>
+    </form>
+</body>
+</html>

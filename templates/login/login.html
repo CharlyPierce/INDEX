@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='estilos_index/styles.css') }}">
+
+</head>
+<body>
+
+    <h1 class="welcome-title" id="welcomeTitle">Bienvenido a Index</h1>
+    {% if current_user.is_authenticated %}
+        <p class="login-info" id="loginInfo">Has iniciado sesión como {{ current_user.id }}</p>
+        <a class="logout-link" id="logoutLink" href="{{ url_for('logout') }}">Cerrar sesión</a>
+        <pre style='display:inline'>&#09;</pre> 
+        <a class="gotostart" id="startid" href="{{ url_for('start') }}">GO</a>
+    {% else %}
+            <h3 class="login-title" id="loginTitle">Iniciar Sesión</h3>
+
+            <form method="POST" class="login-form" id="loginForm">
+                {{ form.hidden_tag() }} 
+                <label for="username" class="username-label" id="usernameLabel">Nombre de usuario:</label><br>
+                {{ form.username(id="username-input", class="username-input",placeholder="invitado") }}<br>
+                <label for="password" class="password-label" id="passwordLabel">Contraseña:</label><br>
+                {{ form.password(id="password-input", class="password-input",placeholder="invitado") }}<br>
+
+                <div class="button-container">
+                    {{ form.submit(class="submit-button", id="submitButton") }}
+                    <a href="/register" class="submit-button">Registrarse</a>
+                </div>
+            </form>
+            <a href="/recovery" class="submit-button">Recuperar Cuenta</a>
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                    {% if messages %}
+                                {% for category, message in messages %}
+                                    <div class="alert alert-{{ category }}">{{ message }}</div>
+                                {% endfor %}
+                    {% endif %}
+            {% endwith %}
+         
+    {% endif %}
+
+
+
+    
+</body>
+</html>

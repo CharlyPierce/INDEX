@@ -1,0 +1,18 @@
+{% macro display_tree(tree, PADRE, CLAVE, form) %}
+    <ul class="lista-tema">
+        {% for key, value in tree.items() %}
+        {% set calificacion_usuario = value.pop('calificacion', 0)  %}
+            {% if 'calificacion' not in key %}
+                <li class="tema-lista">
+                    {% include 'html_p4/tema.html' %}
+                    {% set PADRE = key %}
+                    {% if value is mapping %}
+                        <ul class="lista-subtema">
+                            {{ display_tree(value, PADRE, CLAVE, form) }}
+                        </ul>
+                    {% endif %}
+                </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+{% endmacro %}

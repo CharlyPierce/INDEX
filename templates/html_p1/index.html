@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head> 												<!--#Aqui estas dentro de STATIC" como raiz  MAYUSCULAS CSS-->
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='estilos_p1/styles.css') }}">
+	</head>
+	<body>
+	
+			<div class="row">
+				<div class="section" id="section1">
+					<a class="a" href="{{ url_for('mostrar_pagina', carrera='LIM') }}"><div class="section-content">Licenciatura en Ingeniería Matemática</div></a>
+				</div>
+				<div class="section" id="section2">
+					<a class="a" href="{{ url_for('mostrar_pagina', carrera='LFM') }}"> <div class="section-content">Licenciatura en Física y Matemáticas </div></a>
+				</div>
+				<div class="section" id="section3">
+					<a class="a" href="{{ url_for('mostrar_pagina', carrera='LMA') }}"><div class="section-content">Licenciatura en Matemática Algorítmica</div></a>
+				</div>
+
+			</div>
+			<a class="a" href="{{ url_for('pagina', carrera='otro', semestre='sns' ) }}">
+			<div class="extra">
+				 <div class="section-content2">Otro</div>
+			</div>
+			</a>
+
+	</body>
+</html>
+
